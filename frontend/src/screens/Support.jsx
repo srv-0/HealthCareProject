@@ -27,7 +27,7 @@ export default function Support() {
                             <h3><i className="bi bi-geo-alt"></i> Postal Address</h3>
                         </div>
                         <a href="https://www.google.com/maps/dir//R48J%2B6V+National+Institute+of+Technology+Delhi,+National+Institute+of+Technology+Plot+No.+FA7,Zone,+P1,+GT+Karnal+Rd,+Delhi,+110036/@28.9025366,78.1580267,6z/data=!4m17!1m7!3m6!1s0x390d1b1923ada2e3:0x1169930518add2fe!2sNational+Institute+of+Technology+Delhi!8m2!3d28.8162558!4d77.1332341!16s%2Fm%2F0l8gg7v!4m8!1m0!1m5!1m1!1s0x390d1b1923ada2e3:0x1169930518add2fe!2m2!1d77.1332341!2d28.8162558!3e2" target="_blank" style={{ textAlign: 'center', marginTop: '2.5%', paddingBottom: '3%', fontSize: 'small' }}>
-                            MediKart Headquarters
+                            MedCart Headquarters
                             <br />
                             Plot No. FA7, Zone P1,<br /> GT Karnal Road, Delhi-110036
                         </a>
