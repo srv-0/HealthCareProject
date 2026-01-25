@@ -11,7 +11,7 @@ export default function Home() {
 
     const loadData = async () => {
         try {
-            const response = await fetch('https://MedCart.vercel.app/api/displayData', {
+            const response = await fetch('https://medcart-srv.vercel.app/api/displayData', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

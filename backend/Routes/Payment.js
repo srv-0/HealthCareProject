@@ -21,8 +21,8 @@ router.post('/payment',async(req,res)=>{
         payment_method_types:["card"],
         line_items:lineItems,
         mode:"payment",
-        success_url:"https://MedCart.vercel.app/myorder",
-        cancel_url:"https://MedCart.vercel.app/",
+        success_url:"https://medcart-srv.vercel.app/myorder",
+        cancel_url:"https://medcart-srv.vercel.app/",
     });
     res.json({id:session.id})
 })

@@ -15,7 +15,7 @@ export default function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://MedCart.vercel.app/api/createUser", {
+    const response = await fetch("https://medcart-srv.vercel.app/api/createUser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
