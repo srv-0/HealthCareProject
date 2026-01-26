@@ -130,8 +130,8 @@ npm run dev
 ```
 # Deployment Guide (Vercel)
 The project is designed to be deployed as two separate Vercel projects (Frontend & Backend).
-Phase 1: Deploy Backend
 
+Phase 1: Deploy Backend
 * Push your code to GitHub.
 * In Vercel, import the repo and set the Root Directory to backend.
 * Add Environment Variables (MONGO_URI, STRIPE_SECRET_KEY, etc.).
