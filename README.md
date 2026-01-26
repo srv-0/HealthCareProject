@@ -30,6 +30,7 @@ MEDCART-MAIN/
     ├── .env                # Frontend keys
     └── vercel.json         # Deployment config
 ```
+
 # Database Schema
 The application uses MongoDB with Mongoose. Below are the key collections and their structures.
 ## 1. `users` Collection
@@ -44,6 +45,7 @@ Stores registered user credentials.
   "date": ISODate("2023-10-25T10:00:00Z")
 }
 ```
+
 ## 2. `orders` Collection
 Stores the entire order history for a specific user.
 ```JavaScript
@@ -62,6 +64,7 @@ Stores the entire order history for a specific user.
   ]
 }
 ```
+
 ## 3. `med_items` Collection
 Stores the product catalog (must be seeded manually in Atlas).
 ```JavaScript
@@ -74,6 +77,7 @@ Stores the product catalog (must be seeded manually in Atlas).
   "description": "3-ply protective mask"
 }
 ```
+
 ## 4. `medCategory` Collection
 Stores categories for filtering.
 ```JavaScript
@@ -82,12 +86,14 @@ Stores categories for filtering.
   "CategoryName": "Surgical"
 }
 ```
+
 # Installation & Setup
 ## Prerequisites
 * Node.js (v14+)
 * MongoDB Atlas Account
 * Stripe Account (Test Mode)
 * Google reCAPTCHA Admin Account
+
 ## 1. Backend Setup
 Navigate to the backend folder:
 ```Bash
@@ -134,7 +140,12 @@ Phase 1: Deploy Backend
 Phase 2: Deploy Frontend
 * In Vercel, import the same repo again.
 * Set the Root Directory to frontend.
-* Add Environment Variables:VITE_BACKEND_URL: Paste the backend domain from Phase 1.VITE_STRIPE_PUBLIC_KEY: Your Stripe Public Key.VITE_SITE_KEY: Your Google Site Key.
+* Add Environment Variables:
+```bash
+VITE_BACKEND_URL: Paste the backend domain from Phase 1.
+VITE_STRIPE_PUBLIC_KEY: Your Stripe Public Key.
+VITE_SITE_KEY: Your Google Site Key.
+```
 
 Phase 3: Deploy Final Config
 * Go back to your Backend Project in Vercel.
@@ -143,12 +154,15 @@ Phase 3: Deploy Final Config
 * Add your new Frontend Domain to the Google reCAPTCHA Admin Console allowed domains list.
 
 # API Endpoints 
-Method,Endpoint,Access,Description
-POST,/api/createUser,Public,Register user + Verify Captcha
-POST,/api/loginUser,Public,Login & return Auth Token
-POST,/api/foodData,Public,Get all products & categories
-POST,/api/orderData,Private,Save order to history
-POST,/api/myorderData,Private,Fetch user's order history
-POST,/api/payment,Private,Create Stripe Checkout Session
-Author
+Method | Endpoint | Access | Description
+| :--- | :--- | :--- | :--- |
+POST | /api/createUser | Public | Register user + Verify Captcha
+POST | /api/loginUser | Public | Login & return Auth Token
+POST | /api/foodData | Public | Get all products & categories
+POST | /api/orderData | Private | Save order to history
+POST | /api/myorderData | Private | Fetch user's order history
+POST | /api/payment | Private | Create Stripe Checkout Session
+
+# Author
+
 Saurav Singh
